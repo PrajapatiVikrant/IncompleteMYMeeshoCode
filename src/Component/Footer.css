@@ -1,0 +1,33 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(245, 245, 255);
+    padding: 10px;
+}
+.downloadbtnimg{
+    display: flex;
+}
+.contacttext{
+    font-size: 15px;
+}
+.navicon{
+    display: flex;
+    justify-content: space-around;
+}
+.downloadbtnimg{
+    display: flex;
+    justify-content: space-between;
+}
+.downloadbtnimg > img{
+    margin: 10px;
+    cursor: pointer;
+}
+.navitem{
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+}
+.naviconitem{
+    cursor: pointer;
+}

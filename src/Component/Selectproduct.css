@@ -1,0 +1,81 @@
+.cartdetailctn{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+     
+      padding: 50px;
+      padding-left: 100px;
+      padding-right: 100px;
+
+ }
+ .detailtextctn{
+      display: flex;
+      flex-direction: column;
+    
+     margin: 18px;
+ }
+ .detailimagectn{
+    
+   
+     margin: 18px;
+ }
+ .cartdetailimage{
+     border: 0.01px solid rgb(90, 131, 132);
+ }
+ .pricectn{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     border: 00.01px solid rgb(90, 131, 132);
+     padding: 10px;
+ }
+ .productname{
+     color: rgb(90, 131, 132);
+     font-size: 20px;
+     padding: 5px;
+ }
+ .productprice{
+     padding: 5px;
+     font-size: 30px;
+ }
+ .delivery{
+     font-size: 15px;
+     padding: 5px;
+ }
+ .Cartproductdetail{
+     display: flex;
+     color: rgb(90, 131, 132);
+     flex-direction: column;
+     justify-content: space-around;
+     border: 00.01px solid rgb(90, 131, 132);
+     padding: 20px;
+     font-size: 20px;
+     margin-top: 40px;
+
+ }
+ .detailheading{
+     font-size: 35px;
+     color: black;
+ }
+ .cartaddbtn{
+     display: flex;
+     justify-content: space-around;
+     padding: 20px;
+ }
+ .addcart{
+     font-size: 20px;
+     padding: 15px;
+     cursor: pointer;
+     border: 0.1px solid rgb(90, 131, 132);
+ }
+ .buy{
+     font-size: 20px;
+     padding: 15px 20px;
+     cursor: pointer;
+     background-color: rgb(107, 107, 221);
+     color: white;
+     border: 0.1px solid rgb(90, 131, 132);
+ }
+ .selectimg{
+    height: 300px;
+    width: 100%;
+ }

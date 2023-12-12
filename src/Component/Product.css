@@ -1,0 +1,25 @@
+.productCard{
+  border: 0.2px solid black;
+  width: fit-content;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+
+ 
+  
+   
+}
+.ownword{
+    font-size: 14px;
+}
+.productname{
+    font-size: 18px;
+    color: rgb(116, 145, 135);
+}
+.productprice{
+    text-align: left;
+    font-size: 25px;
+}
+.delivery{
+    text-align: left;
+}

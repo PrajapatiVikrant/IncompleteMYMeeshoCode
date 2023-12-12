@@ -1,0 +1,45 @@
+.showproduct{
+    display: flex;
+    justify-content: space-between;
+}
+.allcart{
+    display: flex;
+    margin: 20px;
+    margin-left: 100px;
+  
+}
+.totalpricectn{
+    margin: 20px;
+}
+.pricetext{
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 5px;
+}
+.decoprice{
+    text-decoration: dashed;
+  
+}
+.priceheading{
+    font-size: 18px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.continuebtnctn{
+    background-color: rgb(255, 239, 219);
+    text-align: center;
+}
+.continuebtn{
+    font-size: 30px;
+    padding: 10px 120px;
+    background-color: blue;
+    cursor: pointer;
+    color: aliceblue;
+}
+.btntext{
+    font-size: 15px;
+    padding: 5px;
+}

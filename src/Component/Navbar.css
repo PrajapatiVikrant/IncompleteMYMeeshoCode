@@ -1,0 +1,102 @@
+.navbar{
+    display: flex;
+    
+    justify-content: space-around;
+    align-items: center;
+   
+  
+
+  
+}
+.logo{
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  cursor: pointer;
+ 
+    
+}
+.searchctn{
+    border: 0.1px solid black;
+    padding: 1px;
+    border-radius: 5px;
+}
+.search{ 
+    width: 360px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+    margin: 5px;
+    
+}
+
+.inner-nav{
+    display: flex;
+   
+  
+  
+}
+.item{
+    padding: 15px;
+   
+    cursor: pointer;
+    font-size: 18px;
+   
+}
+.item-seperate{
+   
+   font-size: 45px;
+   color: rgb(206, 165, 245);
+ 
+}
+.profile_cart{
+    display: flex;
+ 
+   
+
+}
+.profile{
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 18px;
+    margin-top: 14px;
+   cursor: pointer;
+}
+
+.cart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    padding: 14px;  
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+   
+}
+
+.pcitem{
+    font-size: 18px;
+   
+
+} 
+.navcategory{
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.ncategoryitem{
+    font-size: 19px;
+    padding: 20px;
+    cursor: pointer;
+}

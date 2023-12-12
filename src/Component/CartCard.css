@@ -1,0 +1,34 @@
+
+.cartctn{
+    display: flex;
+    border: 0.1px solid black;
+    width: 600px;
+    justify-content: space-between;
+    
+   }
+   .cartsection{
+    display: flex;
+   }
+   .cartimage{
+    width: 70px;
+    height: 70px;
+    border: 0.1px solid black;
+    margin: 20px;
+    
+   }
+   .carttext{
+    font-size: 20px;
+    padding: 20px;
+   }
+   .cartitem{
+    padding: 5px;
+   }
+   .removebtn{
+    padding: 5px;
+    cursor: pointer;
+   }
+   .edit{
+    padding: 5px;
+    
+    cursor: pointer;
+   }
