@@ -10,7 +10,7 @@ function Navbar() {
     });
    async function CreateAccount(){
     let PhoneNo = prompt('Please enter your phone number:');
-   const data = await axios.post('https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/signup',{PhoneNo:PhoneNo},{ headers: {
+   const data = await axios.post('https://meesho-backend-psi.vercel.app/Meesho/signup',{PhoneNo:PhoneNo},{ headers: {
     'Content-Type': 'application/x-www-form-urlencoded', // Set the content type as needed
     // Add any other headers if necessary
   },})

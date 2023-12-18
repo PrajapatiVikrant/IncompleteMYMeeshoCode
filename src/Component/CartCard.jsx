@@ -12,8 +12,8 @@ function CartCard(props){
   const dispatch = useDispatch();
 async function Removeitem(name){
  
-  await axios.delete(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/removeToCart/${localStorage.getItem('token')}/${name}`)
-  const updatedCartArray = await axios.get(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/showCartItem/${localStorage.getItem('token')}`)
+  await axios.delete(`https://meesho-backend-psi.vercel.app/Meesho/removeToCart/${localStorage.getItem('token')}/${name}`)
+  const updatedCartArray = await axios.get(`https://meesho-backend-psi.vercel.app/Meesho/showCartItem/${localStorage.getItem('token')}`)
   dispatch(getCartData(updatedCartArray));
   dispatch(decrement(1))
  
