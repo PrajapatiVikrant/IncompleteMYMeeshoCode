@@ -5,14 +5,13 @@ export const addSlice = createSlice({
   initialState:[],
   reducers: {
     getCartData: (state,actions)=>{
-      console.log('getCartdata function has run')
-      console.log(actions.payload)
+    
       state = actions.payload;
       return state
     },
   
     UpdateCartarray: (state,actions)=>{
-      console.log('UpdateCartarray has run')
+    
       state = actions.payload;
       return state;
     }   

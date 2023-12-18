@@ -4,7 +4,9 @@
     border: 0.1px solid black;
     width: 600px;
     justify-content: space-between;
-    
+   
+   
+   
    }
    .cartsection{
     display: flex;
@@ -31,4 +33,34 @@
     padding: 5px;
     
     cursor: pointer;
+   }
+   .editform{
+    width: 600px;
+    font-size: 20px;
+    border: 2px solid black;
+    position: relative;
+    background-color:blueviolet;
+    color: white;
+    display: none;
+  
+
+    padding: 5px;
+   }
+   .editimage{
+   
+    width: 100px;
+    margin: 5px;
+   }
+   .editsave{
+    margin: 20px;
+   
+    padding: 5px  100px;
+    font-size: 20px;
+    background-color: rgb(53, 58, 53);
+    border: none;
+    color: white;
+    cursor: pointer;
+   }
+   .editsave:hover{
+    background-color: rgb(113, 206, 113);
    }

@@ -5,7 +5,7 @@ export const CartProductSlice = createSlice({
   initialState:{},
   reducers: {
     ChangeProcuctObject: (state,actions) => {
-      console.log('change product object')
+    
       state = actions.payload[0];
      
       return state;

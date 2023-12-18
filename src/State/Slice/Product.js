@@ -10,7 +10,7 @@ export const ProductSlice = createSlice({
     ChangeProductlist: (state,action) => {
       
       state = action.payload;
-      console.log(state)
+   
       return state;
     }
    

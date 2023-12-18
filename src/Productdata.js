@@ -1,6 +1,6 @@
 import axios from "axios";
 const data = async()=>{
-     const data = await axios.get('https://meesho-backend-psi.vercel.app/Meesho/ShowallProduct');
+     const data = await axios.get('https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/ShowallProduct');
      console.log(data.data);
      return data.data
 }

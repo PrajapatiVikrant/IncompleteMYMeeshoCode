@@ -14,7 +14,7 @@ function Productlist(){
    const data =  useSelector((state)=>{
     return state.productlist;
 })
-  console.log(data)
+ 
    
     
     return (

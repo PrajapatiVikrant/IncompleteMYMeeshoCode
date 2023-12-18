@@ -10,13 +10,14 @@ function Navbar() {
     });
    async function CreateAccount(){
     let PhoneNo = prompt('Please enter your phone number:');
-   const data = await axios.post('https://meesho-backend-psi.vercel.app/Meesho/signup',{PhoneNo:PhoneNo},{ headers: {
+   const data = await axios.post('https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/signup',{PhoneNo:PhoneNo},{ headers: {
     'Content-Type': 'application/x-www-form-urlencoded', // Set the content type as needed
     // Add any other headers if necessary
   },})
-   console.log(data.data.data)
+ 
    localStorage.setItem('token',data.data.data)
    alert(data.data.response)
+   window.location.reload();
     }
 
     return (
@@ -34,7 +35,7 @@ function Navbar() {
                     <div className="item-seperate">|</div>
                     <div className="item">Become a Supplier</div>
                     <div className="item-seperate">|</div>
-                    <div className="item">Newsroom</div>
+                    <div className="item"><Link to= '/myorder'>MyOrder</Link></div>
                     <div className="item-seperate">|</div>
                 </div>
                 <div className="profile_cart">

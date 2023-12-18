@@ -1,3 +1,4 @@
+import axios from "axios";
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
@@ -6,17 +7,28 @@ import CartCard from "./CartCard";
 
 function Cartlist() {
     const [totalorder,settotalorder] = useState(0);
+    const [CartArray,setCartArray] = useState([])
     const cartarray = useSelector((state)=>{
         return state.cartarray;
    });
-   console.log(cartarray)
+  
+
    useEffect(()=>{
     let total = 0;
        for(let i = 0;i<cartarray.length;i++){
-          total += cartarray[i].Price;
+          total += (Number(cartarray[i].Price)*Number(cartarray[i].Qty));
        }
        settotalorder(total);
+       setCartArray(cartarray);
+    
    })
+  async function SendOrder(){
+   
+    const mycart = JSON.stringify(cartarray);
+  const data = await axios.post(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/SaveOrder/${localStorage.getItem('token')}?Products=${mycart}`)
+  alert(data.data);
+
+  }
    
     return (
         <>
@@ -24,8 +36,8 @@ function Cartlist() {
        <div className="allcart">
        
         <div>
-        {cartarray.map((elem,ind)=>{
-            return <CartCard url = {elem.Url} name = {elem.ProductName} price = {elem.Price}/>
+        {CartArray.map((elem,ind)=>{
+            return <CartCard url = {elem.Url} name = {elem.ProductName} price = {elem.Price} myid = {ind} Qty={elem.Qty}/>
         })}
         </div>
         <div>
@@ -43,7 +55,7 @@ function Cartlist() {
         <br />
         <div className="continuebtnctn">
         <div className="btntext">Clicking on ‘Continue’ will not deduct any money</div>
-        <div className="continuebtn">Continue</div>
+        <div className="continuebtn" onClick={SendOrder}>Continue</div>
         </div>
         <img src="https://images.meesho.com/images/marketing/1588578650850.webp" alt="image" width='350px' />
         
