@@ -14,8 +14,8 @@ function CartCard(props){
   const dispatch = useDispatch();
 async function Removeitem(name){
  
-  await axios.delete(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/removeToCart/${localStorage.getItem('token')}/${name}`)
-  const updatedCartArray = await axios.get(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/showCartItem/${localStorage.getItem('token')}`)
+  await axios.delete(`https://meesho-backend-psi.vercel.app/Meesho/removeToCart/${localStorage.getItem('token')}/${name}`)
+  const updatedCartArray = await axios.get(`https://meesho-backend-psi.vercel.app/Meesho/showCartItem/${localStorage.getItem('token')}`)
   dispatch(getCartData(updatedCartArray));
   dispatch(decrement(1))
   window.location.reload();
@@ -29,7 +29,7 @@ function edit(url,name,price,myid){
   seteditdata({url:url,name:name,price:price});
 }
 async function editsave(myid){
-const data =  await axios.put(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/updateToCart/${localStorage.getItem('token')}?ProductName=${editdata.name}&Qty=${editQty}`);
+const data =  await axios.put(`https://meesho-backend-psi.vercel.app/Meesho/updateToCart/${localStorage.getItem('token')}?ProductName=${editdata.name}&Qty=${editQty}`);
   alert(data.data)
   window.location.reload()
   document.getElementById(`cartctn${myid}`).style.display = 'flex'

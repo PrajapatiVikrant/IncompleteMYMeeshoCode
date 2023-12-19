@@ -22,8 +22,8 @@ function App() {
  
   async function getdata(){
   
-    const cartdata = await axios.get(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/showCartItem/${localStorage.getItem('token')}`)
-    const data = await axios.get('https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/ShowallProduct');
+    const cartdata = await axios.get(`https://meesho-backend-psi.vercel.app/Meesho/showCartItem/${localStorage.getItem('token')}`)
+    const data = await axios.get('https://meesho-backend-psi.vercel.app/Meesho/ShowallProduct');
   
     dispatch(ChangeProductlist(data.data)); 
     dispatch(getCartData(cartdata.data));

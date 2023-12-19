@@ -26,8 +26,8 @@ function Selectproduct(){
          if(flag === false){
           // dispatch(ChangeProcuctCartArray(data))
          
-          await axios.post(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/AddtoCart/${localStorage.getItem('token')}?Price=${data.price}&ProductName=${data.Name}&Url=${data.url}&Qty=1`)
-          const updatedCartArray = await axios.get(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/showCartItem/${localStorage.getItem('token')}`)
+          await axios.post(`https://meesho-backend-psi.vercel.app/Meesho/AddtoCart/${localStorage.getItem('token')}?Price=${data.price}&ProductName=${data.Name}&Url=${data.url}&Qty=1`)
+          const updatedCartArray = await axios.get(`https://meesho-backend-psi.vercel.app/Meesho/showCartItem/${localStorage.getItem('token')}`)
         dispatch(getCartData(updatedCartArray.data))
           dispatch(increment(1))
           alert('Item added')

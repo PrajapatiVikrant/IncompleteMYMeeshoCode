@@ -25,7 +25,7 @@ function Cartlist() {
   async function SendOrder(){
    
     const mycart = JSON.stringify(cartarray);
-  const data = await axios.post(`https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/SaveOrder/${localStorage.getItem('token')}?Products=${mycart}`)
+  const data = await axios.post(`https://meesho-backend-psi.vercel.app/Meesho/SaveOrder/${localStorage.getItem('token')}?Products=${mycart}`)
   alert(data.data);
 
   }

@@ -9,7 +9,7 @@ function Product(props){
     const dispatch = useDispatch();
   async function Selectedproduct(name){
        
-        const Productdata = await axios.get('https://purple-journalist-dmoxo.pwskills.app:5000/Meesho/showallProduct');
+        const Productdata = await axios.get('https://meesho-backend-psi.vercel.app/Meesho/showallProduct');
         let arr = Productdata.data.filter((elem,ind)=>{
             return elem.Name === name;
         })
