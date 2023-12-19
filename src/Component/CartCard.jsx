@@ -18,7 +18,7 @@ async function Removeitem(name){
   const updatedCartArray = await axios.get(`https://meesho-backend-psi.vercel.app/Meesho/showCartItem/${localStorage.getItem('token')}`)
   dispatch(getCartData(updatedCartArray));
   dispatch(decrement(1))
-  window.location.reload();
+  // window.location.reload();
  
  
 }
@@ -31,7 +31,9 @@ function edit(url,name,price,myid){
 async function editsave(myid){
 const data =  await axios.put(`https://meesho-backend-psi.vercel.app/Meesho/updateToCart/${localStorage.getItem('token')}?ProductName=${editdata.name}&Qty=${editQty}`);
   alert(data.data)
-  window.location.reload()
+  const updatedCartArray = await axios.get(`https://meesho-backend-psi.vercel.app/Meesho/showCartItem/${localStorage.getItem('token')}`)
+  // window.location.reload()
+  dispatch(getCartData(updatedCartArray));
   document.getElementById(`cartctn${myid}`).style.display = 'flex'
   document.getElementById(myid).style.display = 'none';
 }
