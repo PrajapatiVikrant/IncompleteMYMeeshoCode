@@ -7,6 +7,8 @@ export const addSlice = createSlice({
     getCartData: (state,actions)=>{
     
       state = actions.payload;
+      console.log('GetCartData function');
+      console.log(state)
       return state
     },
   
