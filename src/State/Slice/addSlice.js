@@ -5,7 +5,7 @@ export const addSlice = createSlice({
   initialState:[],
   reducers: {
     getCartData: (state,actions)=>{
-    
+      console.log(actions.payload);
       state = actions.payload;
       console.log('GetCartData function');
       console.log(state)
